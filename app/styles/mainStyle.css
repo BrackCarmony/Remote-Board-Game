@@ -1,0 +1,13 @@
+body, html{
+  margin:0;
+  padding:0;
+  background-color: #EEE;
+}
+
+canvas{
+  border:2px solid red;
+  max-height:95vh;
+  max-width: 95vw;
+  margin:0 auto;
+  display: block
+}
