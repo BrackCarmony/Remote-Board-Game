@@ -1,0 +1,6 @@
+
+<form ng-submit ="login()">
+<input type = "email" placeholder = "email" ng-model = "user.email"></input>
+<input type = "password" placeholder = "password" ng-model = "user.password"></input>
+<button type = "submit" ng-disabled="!user.email||!user.password">login</button>
+</form>

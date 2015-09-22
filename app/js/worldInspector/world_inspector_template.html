@@ -1,0 +1,28 @@
+World Inspector
+<h4>Players</h4>
+<div ng-repeat = "(playerName, player) in world.players">
+  <div ng-click ="selectPlayer({ply:playerName})" class = "flex" ng-class = "{selected:player == selectedPlayer}">
+    <div class = "flex-3">
+    <input ng-model = "player.name" ng-change= "world.$save()"></input>
+    {{player.message}}</div> <img class = "flex-1" ng-src = "{{player.img}}">
+  </div>
+</div>
+<div class = flex>
+  <input ng-model = "newPlayer.name">
+</div>
+<h4>World Settings</h4>
+<div class = flex>
+  
+  <ul>
+    <li>Player Size:<input ng-model="world.settings.playerSize" ng-patter = "[1-9]+[0-9]*" ng-change = "world.$save()" type = "number"></input></li>
+    <li>Grid Style
+      <select ng-model = "world.background.grid.type">
+        <option value = "">None</option>
+        <option value = "square">Square</option>
+        <option value = "hex">Hexagonal</option>
+      </select>
+    </li>
+    <li>Grid Offset X:<input ng-model="world.background.grid.xOffset" ng-patter = "[+-]*[1-9]+[0-9]*" ng-change = "world.$save()" type = "number"></input></li>
+    <li>Grid Offset Y:<input ng-model="world.background.grid.yOffset" ng-patter = "[+-]*[1-9]+[0-9]*" ng-change = "world.$save()" type = "number"></input></li>
+  </ul>
+</div>

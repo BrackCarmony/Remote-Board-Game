@@ -1,0 +1,10 @@
+{
+  'example1':{
+    "url": "https://s-media-cache-ak0.pinimg.com/736x/b8/a7/d3/b8a7d346f0f4f6d8ace1468dd847959c.jpg",
+    "gender": "male",
+    "race": "elf",
+    "class": "paladin",
+    "widthScale": 1,
+    "heightScale": "640/489"
+  } 
+}

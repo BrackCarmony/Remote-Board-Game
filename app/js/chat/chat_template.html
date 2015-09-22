@@ -1,5 +1,7 @@
 <div ng-keydown="keyPress($event)" ng-model="playerChatBox">
-I be chat canvas
+Battle Map
 <input></input>
 </div>
-<canvas height = "1000" width = "1000"></canvas>
+
+<canvas height = "1000" width = "1000" ng-click="canvasClick($event)" ng-dblClick="doubleClick($event)" ng-mouseDown = "mouseDown($event)" ng-mouseUp = "mouseUp($event)"></canvas>
+

@@ -15,4 +15,10 @@ app.service("firebaseService", function($firebaseObject, $firebaseArray){
 
     return $firebaseObject(firebaseRef);
   }
+
+  this.getAsset = function(asset){
+    var firebaseRef = new Firebase(baseUrl + "/assets/" + asset);
+
+    return $firebaseObject(firebaseRef);
+  }
 })
